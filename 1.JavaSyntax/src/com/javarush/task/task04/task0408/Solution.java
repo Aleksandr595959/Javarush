@@ -18,6 +18,7 @@ public class Solution {
             System.out.println("Число больше 5");
         } else {
             System.out.println("Число равно 5");
+
         }
 
     }
