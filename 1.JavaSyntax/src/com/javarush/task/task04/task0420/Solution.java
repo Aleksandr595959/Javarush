@@ -10,32 +10,31 @@ import java.io.InputStreamReader;
 public class Solution {
     public static void main(String[] args) throws Exception {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        int a = Integer.parseInt(reader.readLine());
-        int b = Integer.parseInt(reader.readLine());
-        int c = Integer.parseInt(reader.readLine());
+        int number1 = Integer.parseInt(reader.readLine());
+        int number2 = Integer.parseInt(reader.readLine());
+        int number3 = Integer.parseInt(reader.readLine());
 
-        int max = a > b ? a > c ? a : c : b > c ? b : c;
-        //int max1 = b > c ? b : c;
-       // int max = max2 > max1 ? max2 : max1;
-        //System.out.print(max);
-        //int sr2 = a < b ? a : b;
-        //int sr1 =
-
-       // int sr = 0;
-
-        int min2 = a < b ? a : b;
-        int min1 = b < c ? b : c;
-        int min = min2 < min1 ? min2 : min1;
-        System.out.println(max + " " + min);
-          //if (a>=b && a<=c){
-              //   sr = a ;
-           //}else if(b>=a && b<=c){
-            //    sr = b;
-       //  }else if(c>=a && c<=b){
-              //sr = c;
+        if (number1 <= number2 && number1 <= number3) {
+            if (number2 <= number3) {
+                System.out.println(number3 + " " + number2 + " " + number1);
+            } else {
+                System.out.println(number2 + " " + number3 + " " + number1);
+            }
+        } else if (number2 <= number1 && number2 <= number3) {
+            if (number1 <= number3) {
+                System.out.println(number3 + " " + number1 + " " + number2);
+            } else {
+                System.out.println(number1 + " " + number3 + " " + number2);
+            }
+        } else {
+            if (number1 <= number2) {
+                System.out.println(number2 + " " + number1 + " " + number3);
+            } else {
+                System.out.println(number1 + " " + number2 + " " + number3);
+            }
+        }
     }
 
-    // System.out.println(max + " " + sr + " " + min);
 
 }
 
