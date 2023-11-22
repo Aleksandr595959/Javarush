@@ -27,6 +27,7 @@ public class Solution {
 //        }
         Arrays.stream(n).forEach(System.out::println);
     }
+    
 }
 
 
