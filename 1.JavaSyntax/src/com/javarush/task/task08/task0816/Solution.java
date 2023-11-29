@@ -13,19 +13,20 @@ import java.util.Map;
 */
 
 public class Solution {
+
     public static Map<String, Date> createMap() throws ParseException {
         DateFormat dateFormat = new SimpleDateFormat("MMMMM d yyyy", Locale.ENGLISH);
         Map<String, Date> map = new HashMap<>();
         map.put("Смирнов", dateFormat.parse("MAY 1 2012"));
-        map.put("Соболев", dateFormat.parse("Jan 2 2000"));
-        map.put("Сорокин",dateFormat.parse("Sept 5 2005"));
-        map.put("Семечкин", dateFormat.parse("Nov 8 1995"));
-        map.put("Петров",dateFormat.parse("Dec 26 1992"));
-        map.put("Задорнов",dateFormat.parse("Oct 7 1899"));
-        map.put("Дедищев",dateFormat.parse("Feb 16 1999"));
-        map.put("Цареградцев", dateFormat.parse("Aug 20 2009"));
-        map.put("Сысоев", dateFormat.parse("Jul 9 1996"));
-        map.put("Курочкин", dateFormat.parse("Feb 27 1998"));
+        map.put("Иванов", dateFormat.parse("JUNE 1 2012"));
+        map.put("Кузнецов", dateFormat.parse("JULY 1 2012"));
+        map.put("Соколов", dateFormat.parse("AUGUST 1 2012"));
+        map.put("Попов", dateFormat.parse("SEPTEMBER 1 2012"));
+        map.put("Лебедев", dateFormat.parse("MAY 1 2012"));
+        map.put("Новиков", dateFormat.parse("JUNE 1 2012"));
+        map.put("Козлов", dateFormat.parse("JUNE 1 2012"));
+        map.put("Морозов", dateFormat.parse("JUNE 1 2012"));
+        map.put("Петров", dateFormat.parse("JUNE 1 2012"));
         return map;
     }
 
