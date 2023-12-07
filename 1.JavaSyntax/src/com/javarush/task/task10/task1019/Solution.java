@@ -13,10 +13,23 @@ import java.util.Map;
 public class Solution {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        HashMap<String, Integer> map = new HashMap<>();
+        while (true) {
+            String number = reader.readLine();
 
-        int id = Integer.parseInt(reader.readLine());
-        String name = reader.readLine();
+            if (number.isEmpty()) {
+                break;
+            }
+            int id = Integer.parseInt(number);
+            String name = reader.readLine();
+            map.put(name, id);
 
-        System.out.println("Id=" + id + " Name=" + name);
+        }
+
+        for (Map.Entry<String, Integer> pair : map.entrySet()) {
+            System.out.println(pair.getValue() + " " + pair.getKey());
+        }
+
     }
 }
+
