@@ -11,22 +11,22 @@ public class Solution {
     }
 
     public static interface Worker {
-        public void workLazy();
+        void workLazy();
     }
 
     public static interface Businessman {
-        public void workHard();
+        void workHard();
     }
 
     public static interface Secretary {
-        public void workLazy();
+        void workLazy();
     }
 
     public static interface Miner {
-        public void workVeryHard();
+        void workVeryHard();
     }
 
-    public static class Human implements Worker,Businessman,Secretary{
+    public static class Human implements Worker, Businessman, Secretary {
 
         public void workHard() {
         }
